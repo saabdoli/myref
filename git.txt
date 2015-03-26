@@ -9,8 +9,6 @@ To grab repository online:
 --Go to chosen directory and init
 --use 'git clone'
 
-
-
 This creates a new subdirectpry named .git that contains all necessary repository
 files.  
 
@@ -25,3 +23,15 @@ This should show you which files are being tracked and what tracked files have b
 modified.
 
 git commit will commit the changes to the files in the stagin area
+
+Discussion of checkout:
+
+Since Im working on a lot of my repos alone. It doesn't seem that I'll be needing checkout because o
+of this.  Instead, I'll be able to make changes to the local files, test them, stage them,
+and commit them. 
+
+If for some reason I mess up any of my files, I should be able to pull from the 
+remote repo.
+
+I could also branch off of the master to edit some of my files to add features, merge if 
+they work and rollback if they mess up the code in some way.
