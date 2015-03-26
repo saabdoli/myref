@@ -1,0 +1,27 @@
+This is meant to be a reference guide when it comes to git. I will also
+be including some information of GitHub since I will also be using that.
+
+Initializing a local repository:
+--navigate to directory
+--use "git init" command
+
+To grab repository online:
+--Go to chosen directory and init
+--use 'git clone'
+
+
+
+This creates a new subdirectpry named .git that contains all necessary repository
+files.  
+
+You can then start adding files to track by using the "git add" command
+
+--git add <filename>
+--git add *.ext    -- adds all files with same extension
+
+To check the status of tracked files in directory, use 'git status'.
+
+This should show you which files are being tracked and what tracked files have been
+modified.
+
+git commit will commit the changes to the files in the stagin area
