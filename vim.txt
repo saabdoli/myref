@@ -53,6 +53,10 @@ cw - change word
 cW - change WORD
 ce  - change entire word
 
+d$ - cut to end of the line
+d0 - cut to beginning of line
+d^ - cut to first non-whitespace character
+
 vi} - while cursor in curly braces, select all text in curly braces
 va} - while cursor in curly braces, select all text in curly braces including braces
 vi},',",],> - while cursor in curly braces, select all text in curly braces
