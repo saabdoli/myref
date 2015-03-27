@@ -6,7 +6,7 @@ Modes:
 i - insert
 v - visual mode
 V - visual mode, line-wise
-exit to Normal - fd 
+exit to Normal - jk  
 
 Commands still used:
 
@@ -89,6 +89,7 @@ R - make directory the root directory
 
 l - open file in lst active window
 # <windowNUM> - open file in window number
+
 
 Docview mode:
 built in major mode to view pdfs word docs etc.
