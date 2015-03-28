@@ -1,0 +1,14 @@
+This is documentation representing the keystrokes used to control my personaized version of emacs.
+
+Escape Sequence(must change): <esc> or C-[
+Command Starter:  :  (colon)
+Great Vim Shortcuts:
+
+When in text buffer:
+
+movement: h, j, k, l
+
+
+
+
+Needed Emacs shortcuts:
