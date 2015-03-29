@@ -1,0 +1,20 @@
+File Describing JDK Tools for use through command line.
+
+javac -- Compiler:
+
+2 ways to pass source files to javac:
+
+for a small amount: javac <filename>.java <filename>.java <filename>.java
+for a large amount: list in fileseparated by spaces or line breaks,
+      	    	    then use list filename feature with javac and @ character
+		    Ex.  javac @<filename>
+		    
+
+Standard Options:
+
+-d <directory>   -- specefies directory for javac to place class files, if class files are in packages they will be placed in folders to maintain package heirarchy.
+
+-nowarn   -- display no warnings.
+
+-verbose  --display compilations and stuff
+

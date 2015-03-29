@@ -102,7 +102,7 @@ C-R -- redo changes that were undone
 U  -- undo all latest changes on one line
 .  -- repeat last change
 
-
+#Not applicable to Emacs+Evil
 Working with files in tabs:
 :tabe [filename]  opens file in new tab in gvim
 gt   switch tabs
@@ -123,7 +123,7 @@ k -- Focus on above window
 l -- focus on right window
 c -- close active window
 o -- close other windows
-T  -- move window to new tab
+T  -- move window to new tab  #Not applicable to Emacs+Evil
 
 
 Exploring Files:
