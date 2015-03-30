@@ -1,0 +1,77 @@
+Default Elisp:
+
+(point) -- current cursor position
+
+(region-beginning)   returns pos for beginning or end of region
+(region-end)
+
+(point-max) --returns pos for end of buffer
+(point-min) --get beginning position of buffer when narrow-to-region is in effect
+
+(info "(elisp) Motion")
+Moving Cursor and Searching:
+
+(goto-char 392) -- move cursor to pos 392
+
+(forward-char n) --move forward n character
+(backward-char n) --move back n characters
+
+(skip-chars-forward "\n\t") -- move cursor to first char that's not newline or tab
+(skip-chars-backward "\n\t") -- Returns the distance traveled
+
+(search-forward myStr) -- move cursor to the location of myStr
+(search-backward myStr) -- returns the new position
+
+(search-forward-regexp myRegex) -- move cursor to the location matched by regex
+(search-backward-regexp myRegex) -- returns the new position
+
+(beginning-of-line) -- move to beginning/end of line
+(end-of-line)
+
+
+(info "(elisp) Text")
+Text Editing:
+
+Inserting Text :
+
+(insert "i ♥ u") -- insert string at current cursor position
+
+(insert-buffer-substring-no-properties myBuffer myStartPos myEndPos) -- insert part of a buffer
+
+(insert-file-contents myPath) -- insert a file's content
+
+(delete-char 9) -- delete 9 chars starting at current cursor pos
+
+(delete-region myStartPos myEndPos) -- deleting text
+
+(erase-buffer) -- delete whole buffer content
+
+
+Find/Replace Text in Buffer
+
+Emacs Lisp: How to Find/Replace Text
+
+Grabbing Text
+
+Functions that grab text in a buffer into a string.
+
+;; get the string from buffer
+(setq myStr (buffer-substring myStartPos myEndPos))
+(setq myStr (buffer-substring-no-properties myStartPos myEndPos))
+;; grab a thing at point. The “thing” is a semantic unit. It can be a
+; word, symbol, line, sentence, filename, URL and others.
+
+;; grab the current word
+(setq myStr (thing-at-point 'word))
+
+;; grab the current word with hyphens or underscore
+(setq myStr (thing-at-point 'symbol))
+
+;; grab the current line
+(setq myStr (thing-at-point 'line))
+
+;; grab the start and end positions of a word
+(setq myBoundaries (bounds-of-thing-at-point 'word))
+
+
+BUFFERS

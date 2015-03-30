@@ -1,0 +1,24 @@
+Java Projects should be setup like this:
+
+ProjectFolder
+|
+|
+|src|
+|   | file1.java
+|   | file2.java
+|   | file3.java
+|
+|
+|bin|
+|   | file1.class
+|   | file2.class
+|   | file3.class
+|
+|
+| ReadMe.txt
+| MakeFile
+
+
+TODO
+*Add new file organizion method.
+

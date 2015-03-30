@@ -1,0 +1,160 @@
+This will be my reference file for Vim(GVim) to be specific.
+
+Mode Selection:
+
+Normal mode: jk
+Insert Mode: i
+Visual Mode: v - character-wise Visual mode
+             V - line-wise Visual mode
+
+
+Navigation:
+
+hjkl - left, down, up, right
+gj - move up by visual line
+gk -- move down by visual line
+
+w  - forward to start of next word
+b - backward to start of current/previous word
+e - forward to end of current/next word
+ge - backward to end of previous word
+
+W - forward to start of next WORD
+B - backward to start of current/previous WORD
+E - forward to end of current/next word
+GE - backward to end of previous word
+
+B 
+
+f[char] -- goes to first occurrence of char to right of cursor
+F[char] -- goes to first charater of char to the left of crsor
+t[char] -- forward to the character before the next occurrence
+T[char] -- backward to the character after the previous occurrence
+;  -- move to next occurrence of character
+,  -- previous occurrence of character
+
+
+Inserting Text:
+
+a - append text after cursor
+A - append text after end of line
+i - insert text before cursor
+I - insert text before the first non-blank in the line
+gI - Insert text in column 1
+o - begin new line below the cursor and insert text
+O - Begin a new line above the cursor and insert text
+
+Tips and tricks:
+
+
+ea  - append and end of current word
+gea - append at the end of previous word
+cw - change word
+cW - change WORD
+ce  - change entire word
+
+d$ - cut to end of the line
+d0 - cut to beginning of line
+d^ - cut to first non-whitespace character
+
+vi} - while cursor in curly braces, select all text in curly braces
+va} - while cursor in curly braces, select all text in curly braces including braces
+vi},',",],> - while cursor in curly braces, select all text in curly braces
+
+xp - transpose characters
+ddp - transpose  the order of this line with the next line
+
+
+Deleting Text:
+x - delete character under cursor
+X - delete characters before the cursor
+dw - delete word
+dd- delete line
+D - delete characters to end of line
+
+
+Cut and paste:
+yy  -- copy line into paste buffer 
+dd --  cut line into paste buffer
+p --  paste buffer below cursor line 
+P --  paste buffer above cursor line
+x --  swap two characters (x to delete one character, put it back after the cursor position)
+:reg -- see all registers
+"0P -- put from yank register
+
+Copy from System Clipboard:
+"+P -- used with cut, copy, paste
+"* -- used with middle mouse button
+
+
+Searching Text:
+/pattern/  -- Search for the occurrence of the pattern forwards
+?pattern   -- Serach for the pattern backwards
+Replacing Text:
+r[char] - replace char under cursor with [char]
+R  --  Enter Replace mode, replaces chars rather then inserting
+~  -- Switch case of char under cursor and moves cursor to the left
+
+
+Undo/Redo:
+u  -- undo changes
+C-R -- redo changes that were undone
+U  -- undo all latest changes on one line
+.  -- repeat last change
+
+#Not applicable to Emacs+Evil
+Working with files in tabs:
+:tabe [filename]  opens file in new tab in gvim
+gt   switch tabs
+:tabc  -- close current tab and its windows
+:tabo  -- close all other tabs with their windows
+:lcd  set working directory for current window
+
+
+Working with Windows:
+Window Shortcut  -- <C-w> press this before entering any following commands
+
+s  -- Split into Horizontal Window
+v  -- SPlit Vertically
+w -- cycle between open windows
+h  -- focus on left window
+j -- focus on below window
+k -- Focus on above window 
+l -- focus on right window
+c -- close active window
+o -- close other windows
+T  -- move window to new tab  #Not applicable to Emacs+Evil
+
+
+Exploring Files:
+
+:e . -- directory explorer
+:!  -- run shell temporarily
+:ls -- list buffers open in vim
+:bdelete [bufferlabel]
+:shell  -- open shell in vim
+exit  -- exit shell in vim
+
+
+Set Path:
+:set path+=[pathname/**]  ** == wildcard(subdirectorie)
+
+
+Exiting and Saving:
+
+:q  Quit Vim. This fails when changes have been made.
+:q!	Quit without writing.
+:cq  Quit always, without writing.
+:wq	  Write the current file and exit.
+:wq!	Write the current file and exit always.
+:wq  {file}	Write to {file}. Exit if not editing the last
+:wq! {file}	Write to {file} and exit always.
+:[range]wq[!] [file]   Same as above, but only write the lines in [range].
+ZZ	Write current file, if modified, and exit.
+ZQ	Quit current file and exit (same as ":q!")
+
+
+Macros :
+
+q[register]  --start/stop recording
+
