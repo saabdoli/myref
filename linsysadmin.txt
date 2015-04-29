@@ -1,7 +1,0 @@
-Backing up and restoring files:
-
-One of the simplest ways to backup a whole directory is using the tar utility
-
---   tar cvf data.backup /data
-
-where 'data.backup' is the name of the file in which you want to store the backups.

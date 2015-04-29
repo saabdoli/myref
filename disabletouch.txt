@@ -1,3 +1,0 @@
-This is the terminal command to disable keyboard while typing. 
-
-syndaemon -i 1 -K -R -d
