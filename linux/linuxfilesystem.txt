@@ -1,0 +1,41 @@
+This is a reference sheet showing how Linux's file system is maintained
+
+
+Top Level --
+
+Root ("/") - This is the root directory of the entire file system hierarchy. Often represented with a /.
+
+
+Root Child Directories:
+
+/bin/ -- Essential user command binaries
+
+/boot/--Static files of the bootloader
+
+/dev/--Device Files
+
+/etc/-Host-Specific System Configuration(Required dir.: opt, xii, sqml, xml)
+
+/home/ --User Home directories
+
+/lib/ --Essential Shared Libraries
+
+/media/ Mount point for removable media
+
+/mnt/ Mount Point for temporarily mounted filesystems
+
+/opt/ add-on application software packages
+
+/sbin/System binaries
+
+/srv/Data for services provided by system
+
+/tmp/Temporary files
+
+/usr/(multi-)user utilities and applications
+
+/var/--Variable files
+
+/root/--Home directory for the root user
+
+/proc/--virtual filesystem documenting kernek and process status as text files

@@ -1,0 +1,40 @@
+Documentation representing the keystrokes used for my personaized version of emacs.
+
+Escape Sequence(must change): <esc> or C-[
+Command Starter:  :  (colon)
+Great Vim Shortcuts:
+
+When in text buffer:
+
+h, j, k, l
+
+In minibuffers etc.:
+
+C-n, C-p, C-f, C-b
+
+
+Personal Leader Key Shortcuts:
+
+leader key: <SPC>
+
+ff  :find file with ido
+bb  :switch to toher buffer
+
+bn  : next buffer
+bp  :previous buffer
+
+k   : kill buffer
+zz  : save buffers and exit emacs
+
+ww  :other window
+wc  : close window
+wo  : close other window            #must be fixed
+wh  : split window horizontally
+wv  : split window vertically
+
+fn  :save to new file
+
+nf  : new frame
+s   : save buffer to file
+
+

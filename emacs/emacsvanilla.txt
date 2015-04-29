@@ -1,0 +1,61 @@
+This file will detail the vanilla shortcuts of Emacs--
+
+Two Main Key modifiers  -- 
+
+C - Control Key
+M - Meta/Alt Key
+
+Exiting Emacs --
+
+suspend  - C-z
+exit     - C-x C-c
+
+
+File I/O --
+
+open file - C-x C-f
+save file - C-x C-s
+save all files - C-x s
+
+insert contents of another file into buffer - C-x i
+replace this file with other file - C-x C-v
+write buffer to a file - C-x C-w
+toggle read-only status of buffer  -- C-x C-q
+
+
+Help --
+
+access help - C-h
+remove help window - C-x 1
+
+Incremental Search --
+
+search forward - C-s
+search backwards - C-r
+regular expression search - C-M-s
+reverse regular expression search - C-M-r
+
+select previous search string - M-p
+select new search string - M-n
+exit incremental search - RET
+abort current search  - C-g
+
+
+Moving Through Text --
+
+by char - C-b, C-f
+by word - M-b, M-f
+by line - C-p, C-n
+
+go to line beginning(end) - C-a, C-e
+
+by sentence - M-a, M-e
+by paragraph - M-{, M-} 
+by page - C-x [, C-x ]
+
+buffer beginning and end - M-<, M->
+
+
+Mulitple Windows
+
+C-x 0

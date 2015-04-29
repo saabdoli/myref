@@ -1,0 +1,51 @@
+Emacs Notes I've gathered from online.
+
+Emacs has multiple shells:
+
+shell - inferior shell, can do basic commands but some interactive apps like top may not work
+
+eshell - a lisp shell, shares a lot of the same syntax as bash, but customizable with lisp
+
+x-term(term) - shell emulator that can allow more shell apps to be run
+
+
+
+IDo Specialized Commands:
+
+C-b  - Reverts to the old switch-buffer completion engine. Available in Buffers.
+
+C-f  - Reverts to the old find-file completion engine. Available in Files
+
+C-d  - Opens a dired buffer in the current directory. Available in Dirs / Files
+
+C-a  - Toggles showing ignored files (see ido-ignore-files). Available in Files / Buffers
+
+C-c  - Toggles if searching of buffer and file names should ignore case. (see ido-case-fold). Available in Dirs / Files / Buffers
+
+TAB Attempt to complete the input like the normal completing read functionality. Available in Dirs / Files / Buffers
+
+C-p  - Toggles prefix matching; when it’s on the input will only match the beginning of a file name instead of any part of it.
+
+Files
+C-s / C-r  - Moves to the next and previous match, respectively. Available everywhere
+
+C-t  - Toggles matching by Emacs regular expression.. Available everywhere
+
+BckSpc  - Deletes characters as usual or goes up one directory if it makes sense to do so.. Available everywhere
+
+C-SPC / C-@  - Restricts the completion list to anything that matches your current input. * Available everywhere*
+
+//  - Like most Linux shells two forward slashes in a path means “ignore the preceding path, and go back to the top-most directory”. Works the same in Ido but it’s more interactive: it will go to the root / (or the root of the current drive in Windows) Available in Files
+
+~/  - Jumps to the home directory. On Windows this would be typically be %USERPROFILE% or %HOME%, if it is defined. Available in Files / Dirs
+
+M-d  - Searches for the input in all sub-directories to the directory you’re in.. Available in Files
+
+C-k Kills the currently focused buffer or deletes the file depending on the mode.. Available in Files / Buffers
+
+M-m Creates a new sub-directory to the directory you’re in. Available in Files
+
+
+
+
+
