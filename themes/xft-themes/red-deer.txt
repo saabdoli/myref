@@ -1,0 +1,49 @@
+! Xft settings ---------------------------------------------------------------
+
+Xft.antialias: 1
+Xft.autohint: 0
+Xft.dpi: 96
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcddefault
+Xft.rgba: rgb
+
+
+! URxvt settings -------------------------------------------------------------
+
+URxvt.depth: 32
+URxvt.background: #212121
+URxvt.font: -*-erusfont-medium-r-normal-*-11-*-*-*-*-*-*-*
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+URxvt.scrollBar: false
+URxvt*foreground: #fafafa
+URxvt.geometry: 79x21
+
+! Color settings -------------------------------------------------------------
+
+!black
+*color0:    #000000
+*color8:    #000000
+!red
+*color1:    #e30613
+*color9:    #e30613
+!green
+*color2:    #bdbdbd
+*color10:   #bdbdbd
+!yellow
+*color3:    #e30613
+*color11:   #e30613
+!blue
+*color4:    #bdbdbd
+*color12:   #bdbdbd
+!magenta
+*color5:    #e30613
+*color13:   #e30613
+!cyan
+*color6:    #bdbdbd
+*color14:   #bdbdbd
+!white
+*color7:    #ffffff
+*color15:   #ffffff

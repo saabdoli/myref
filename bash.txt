@@ -1,5 +1,13 @@
+* Remember that filenames can be replaced by pathnames, therefore its not necessary to switch directories
+to execute most commands
+
+* TAB is your best friend
+
 Basics:
 
+CTRL-C  - "interrupt" Stop command of process
+CTRL-D - end of file character
+CTRL-J - line feed character
 
 pwd - print working directory
 
